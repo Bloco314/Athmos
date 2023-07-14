@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(18, 18, 27);
+}
+
+.game-board{
+    width: 80%;
+    position: relative;
+    height: 500px;
+    border: 1px solid  #333;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.cloud{
+    position: absolute;
+    width: 80px;
+    height: 60px;
+    animation: cloud-fall 5s infinite linear; 
+    background-color: rgba(0, 0, 0, 0);
+}
+
+@keyframes cloud-fall {
+    from {
+        top: -60px;
+    }
+    to {
+        top: 100%;
+    }
+}
+
+.cloud-H-D{
+    position: absolute;
+    width: 80px;
+    height: 60px;
+    animation: cloud-right-left 10s infinite linear; 
+    background-color: rgba(0, 0, 0, 0);
+}
+
+@keyframes cloud-right-left{
+    from{
+        right: 0;
+    }
+    to{
+        right: 100%;
+    }
+}
+
+.cloud-H-E{
+    position: absolute;
+    width: 80px;
+    height: 60px;
+    animation: cloud-left-right 10s infinite linear; 
+    background-color: rgba(0, 0, 0, 0);
+}
+
+@keyframes cloud-left-right{
+    from{
+        left: 0;
+    }
+    to{
+        left: 100%;
+    }
+}
+
+.hero{
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    bottom: 10%;
+    background-color: rgb(0,0,0,0);
+}
+
+.top-bar{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(0,0,0,0);
+}
+
+.placar-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    border: 1px solid white;   
+}
+
+.placar{
+    text-align: center;
+    vertical-align: middle;
+    color:white; 
+}
+
+.core{
+    width: 80px;
+    height: 60px;
+}
+
+.titulo{
+    font-size: 40px;
+    color:white;
+    background-color: rgb(0,0,0,0);
+    text-align: center;
+}
+
+.text-div{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    background-color: rgb(0,0,0,0,);
+    width: 80%;
+}
+
+.text-box{
+    color: white;
+    font-size: 30px;
+    background-color: rgb(0,0,0,0);
+}

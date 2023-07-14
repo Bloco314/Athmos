@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="/static/styles/index.css">
+  <title>Athmos</title>
+</head>
+<body>
+  <div id="principal">
+    <h1>Athmos</h1>
+    <div style="display: flex;flex-direction: row;">
+        <div style="display: flex;flex-direction: column">        
+            <button onclick="redirecionar('/firststage')">Fase 1</button>
+            <button onclick="redirecionar('/thirdstage')">Fase 3</button>
+            <button onclick="redirecionar('/fifthstage')">Fase 5</button>
+        </div>
+        <div style="display: flex;flex-direction: column;">
+            <button onclick="redirecionar('/secondstage')">Fase 2</button>
+            <button onclick="redirecionar('/fourthstage')">Fase 4</button>
+            <button onclick="redirecionar('/sobre')">Sobre</button>
+        </div>
+    </div>
+  </div>
+  <script>
+    function redirecionar(rota) {
+      window.location.href = rota;
+    }
+  </script>
+</body>
+</html>

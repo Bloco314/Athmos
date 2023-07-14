@@ -1,0 +1,42 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+body{
+  background-image: url('/static/assets/cometFall.png');
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  font-size: 64px;
+  color: white;
+  text-align: center;
+}
+
+button {
+  font-size: 24px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #559cb6;
+  color: rgb(9, 36, 71);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 3px 10px rgba(102, 92, 92, 0.2);
+}
+
+#principal{
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  align-items: center;
+  justify-content: center;
+}

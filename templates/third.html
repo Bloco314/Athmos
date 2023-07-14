@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles/style.css">
+    <title>Athmos</title>
+</head>
+<body>
+    <div class="game-board" style="background: linear-gradient(to top, #370d5e 0%, #180a47 100%)">
+        <div class="titulo">Mesosfera</div>
+        <img src="/static/assets/camet.gif" style="right:500px;top: 400px;" class="hero">
+        <div class="top-bar">
+            <div class="placar-wrapper">
+                <h1 class="placar">0</h1>
+            </div>
+            <img src="/static/assets/heart.gif" class="core core-one">
+            <img src="/static/assets/heart.gif" class="core core-two">
+            <img src="/static/assets/heart.gif" class="core core-tree">
+        </div>
+    </div>
+    <div class="text-div">
+        <p class="text-box">Comet:</p>
+        <p class="text-box info"></p>
+    </div>
+    <script src="/static/move.js"></script>
+    <script src="/static/historias/mesosfera.js"></script>
+    <script>
+        let nextLevel = '/fourthstage'
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles/style.css">
+    <title>Athmos</title>
+</head>
+<body>
+    <div class="game-board" style="background: linear-gradient(to top,#87CEEB, #00008B)">
+        <div class="titulo">Troposfera</div>
+        <img src="/static/assets/camet.gif" style="right:500px;top: 400px;" class="hero">
+        <div class="top-bar">
+            <div class="placar-wrapper">
+                <h1 class="placar">0</h1>
+            </div>
+            <img src="/static/assets/heart.gif" class="core core-one">
+            <img src="/static/assets/heart.gif" class="core core-two">
+            <img src="/static/assets/heart.gif" class="core core-tree">
+        </div>
+    </div>
+    <div class="text-div">
+        <p class="text-box">Comet:</p>
+        <p class="text-box info">Bem-vindo a Troposfera, cuidado com as nuvens cinzas</p>
+    </div>
+    <script src="/static/generateCloudsV.js"></script>
+    <script src="/static/generateCloudsH.js"></script>
+    <script src="/static/colisoes.js"></script>
+    <script src="/static/move.js"></script>
+    <script src="/static/historias/troposfera.js"></script>
+    <script>
+        let nextLevel = '/secondstage'
+        let dificuldade = 5
+        let poluicao = 1
+    </script>
+</body>
+</html>
