@@ -19,4 +19,21 @@ function criarNuvemHorizontal() {
       gameboard.appendChild(imgElement2);
   }
 }
+
+function outOfBoard(){
+  const img2 = document.querySelectorAll('.cloud-H-D')
+  img2.forEach(element => {
+    if(parseInt(element.offsetLeft)<-50){
+      element.parentNode.removeChild(element)
+    }
+  })
+
+  const img3 = document.querySelectorAll('.cloud-H-E')
+  img3.forEach(elemen => {
+    if(parseInt(elemen.offsetRight)<50){
+      elemen.parentNode.removeChild(elemen)
+    }
+  })
+}
 setInterval(criarNuvemHorizontal, 5000);
+setInterval(outOfBoard,50)

@@ -14,11 +14,19 @@
     overflow: hidden;
 }
 
-.cloud{
+.obstaculo-vertical{
     position: absolute;
     width: 80px;
     height: 60px;
     animation: cloud-fall 5s infinite linear; 
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.obstaculo-vertical2{
+    position: absolute;
+    width: 80px;
+    height: 60px;
+    animation: cloud-fall 3s infinite linear; 
     background-color: rgba(0, 0, 0, 0);
 }
 
